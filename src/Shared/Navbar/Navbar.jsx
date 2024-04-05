@@ -1,5 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
-import userDefaultPic from '../../assets/user.png'
+import userDefaultPic from "../../assets/user.png";
 
 const Navbar = () => {
   const navLinks = (
@@ -12,6 +12,9 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink to="/career">Career</NavLink>
+      </li>
+      <li>
+        <NavLink to="/login">Login</NavLink>
       </li>
     </>
   );
@@ -53,10 +56,7 @@ const Navbar = () => {
           className="btn btn-ghost btn-circle avatar"
         >
           <div className="w-10 rounded-full">
-            <img
-              alt="Tailwind CSS Navbar component"
-              src={userDefaultPic}
-            />
+            <img alt="Tailwind CSS Navbar component" src={userDefaultPic} />
           </div>
         </div>
         <Link to="/login">
